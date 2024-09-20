@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ugconf"
+version = "0.1.0"
+description = ""
+authors = ["oscar.bahamonde.ext <oscar.bahamonde.ext@holcim.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.35.23"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.6"
+
+
+[tool.poetry.group.dev.dependencies]
+boto3-stubs = {extras = ["all"], version = "^1.35.23"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
